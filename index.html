@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Games - Roblox Revival</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <div class="header">
+    <div class="header-left">
+      <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+      <div class="logo">C</div>
+      <div class="nav-links">
+        <a href="index.html">Games</a>
+        <a href="catalog.html">Catalog</a>
+        <a href="#">Create</a>
+        <a href="#">Download</a>
+      </div>
+    </div>
+    <div class="header-right">
+      <div class="currency">R$ 100</div>
+      <div class="currency">◆ 0</div>
+      <div class="notif">⚙ <span class="notif-badge">1</span></div>
+    </div>
+  </div>
+
+  <!-- Search -->
+  <div class="search-bar">
+    <div class="search-wrapper">
+      <span class="search-icon">🔍</span>
+      <input type="text" class="search-input" placeholder="Search">
+    </div>
+  </div>
+
+  <!-- Sidebar -->
+  <div class="overlay" id="overlay" onclick="toggleSidebar()"></div>
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <div class="sidebar-avatar">A</div>
+      <div>
+        <strong>Ajb</strong>
+      </div>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="index.html"><span class="icon">🏠</span> Home</a>
+      <a href="profile.html"><span class="icon">👤</span> Profile</a>
+      <a href="#"><span class="icon">💬</span> Messages</a>
+      <a href="#"><span class="icon">👥</span> Friends</a>
+      <a href="#"><span class="icon">🧍</span> Avatar</a>
+      <a href="#"><span class="icon">🎒</span> Inventory</a>
+      <a href="#"><span class="icon">🔄</span> Trade</a>
+      <a href="#"><span class="icon">👨‍👩‍👧‍👦</span> Groups</a>
+      <a href="#"><span class="icon">📋</span> Forums</a>
+      <a href="#"><span class="icon">🛒</span> Redeem</a>
+    </nav>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <div class="games-grid">
+      <!-- Game 1 -->
+      <div class="game-card">
+        <div class="game-thumb" style="background: linear-gradient(135deg, #1a1a2e, #16213e);">
+          <div style="text-align:center;color:white;font-size:13px;font-weight:700;padding:8px;">
+            <div style="font-size:18px;margin-bottom:4px;">CLONE TYCOON</div>
+            <div style="font-size:28px;color:#ff4444;">2</div>
+          </div>
+          <span class="game-year">2018</span>
+        </div>
+        <div class="game-info">
+          <div class="game-title">Clone Tycoon 2</div>
+          <div class="game-players">11 Playing</div>
+          <div class="rating">
+            <span class="star filled">★</span>
+            <span class="star filled">★</span>
+            <span class="star filled">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Game 2 -->
+      <div class="game-card">
+        <div class="game-thumb" style="background: linear-gradient(180deg, #87ceeb, #b0e0e6);">
+          <div style="text-align:center;color:#222;font-weight:700;">
+            <div style="font-size:28px;letter-spacing:2px;">Eca</div>
+            <div style="font-size:11px;margin-top:4px;">an hangout</div>
+          </div>
+        </div>
+        <div class="game-info">
+          <div class="game-title">Ecalp: an hangout</div>
+          <div class="game-players">0 Playing</div>
+          <div class="rating">
+            <span class="star filled">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Promo Banner -->
+    <div class="promo-banner">
+      <span>Come under the rainbow!</span>
+      <div style="font-size:12px;margin-top:6px;opacity:0.9;">Pride Month Event</div>
+    </div>
+
+    <!-- More games -->
+    <div class="games-grid" style="margin-top:12px;">
+      <div class="game-card">
+        <div class="game-thumb" style="background:#2d3436;">
+          <div style="color:white;font-size:14px;font-weight:600;">Work at a Pizza Place</div>
+        </div>
+        <div class="game-info">
+          <div class="game-title">Work at a Pizza Place</div>
+          <div class="game-players">42 Playing</div>
+          <div class="rating">
+            <span class="star filled">★</span>
+            <span class="star filled">★</span>
+            <span class="star filled">★</span>
+            <span class="star filled">★</span>
+            <span class="star">★</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="game-card">
+        <div class="game-thumb" style="background:linear-gradient(135deg,#6c5ce7,#a29bfe);">
+          <div style="color:white;font-size:14px;font-weight:600;">Natural Disaster Survival</div>
+        </div>
+        <div class="game-info">
+          <div class="game-title">Natural Disaster Survival</div>
+          <div class="game-players">87 Playing</div>
+          <div class="rating">
+            <span class="star filled">★</span>
+            <span class="star filled">★</span>
+            <span class="star filled">★</span>
+            <span class="star filled">★</span>
+            <span class="star filled">★</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom bar -->
+  <div class="bottom-bar">
+    <a href="#">◀</a>
+    <a href="#">▶</a>
+    <div class="center-btn">madxka.com</div>
+    <a href="#">⟳</a>
+    <a href="#">⋯</a>
+  </div>
+
+  <script>
+    function toggleSidebar() {
+      document.getElementById('sidebar').classList.toggle('open');
+      document.getElementById('overlay').classList.toggle('show');
+    }
+  </script>
+</body>
+</html>
