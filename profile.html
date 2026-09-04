@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>carti - Roblox Revival</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <div class="header">
+    <div class="header-left">
+      <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+      <div class="logo">C</div>
+      <div class="nav-links">
+        <a href="index.html">Games</a>
+        <a href="catalog.html">Catalog</a>
+        <a href="#">Create</a>
+        <a href="#">Download</a>
+      </div>
+    </div>
+    <div class="header-right">
+      <div class="currency">R$ 100</div>
+      <div class="currency">◆ 0</div>
+      <div class="notif">⚙ <span class="notif-badge">1</span></div>
+    </div>
+  </div>
+
+  <!-- Search -->
+  <div class="search-bar">
+    <div class="search-wrapper">
+      <span class="search-icon">🔍</span>
+      <input type="text" class="search-input" placeholder="Search">
+    </div>
+  </div>
+
+  <!-- Sidebar -->
+  <div class="overlay" id="overlay" onclick="toggleSidebar()"></div>
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <div class="sidebar-avatar">A</div>
+      <div><strong>Ajb</strong></div>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="index.html"><span class="icon">🏠</span> Home</a>
+      <a href="profile.html"><span class="icon">👤</span> Profile</a>
+      <a href="#"><span class="icon">💬</span> Messages</a>
+      <a href="#"><span class="icon">👥</span> Friends</a>
+      <a href="#"><span class="icon">🧍</span> Avatar</a>
+      <a href="#"><span class="icon">🎒</span> Inventory</a>
+      <a href="#"><span class="icon">🔄</span> Trade</a>
+      <a href="#"><span class="icon">👨‍👩‍👧‍👦</span> Groups</a>
+      <a href="#"><span class="icon">📋</span> Forums</a>
+      <a href="#"><span class="icon">🛒</span> Redeem</a>
+    </nav>
+  </div>
+
+  <!-- Main -->
+  <div class="main">
+    <div class="profile-header">
+      <!-- Avatar with horns -->
+      <div class="avatar-circle">
+        <div class="avatar-placeholder">
+          <div class="horns">👹</div>
+          <div class="avatar-body">
+            <div class="avatar-head">😊</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="username">
+        carti
+        <span class="obc-badge">OBC</span>
+        <span class="verified">✓</span>
+      </div>
+      <div class="handle">@carti</div>
+
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-label">Friends</div>
+          <div class="stat-value">199</div>
+        </div>
+        <div class="stat">
+          <div class="stat-label">Followers</div>
+          <div class="stat-value">136</div>
+        </div>
+        <div class="stat">
+          <div class="stat-label">Following</div>
+          <div class="stat-value">1</div>
+        </div>
+        <div class="stat">
+          <div class="stat-label">RAP</div>
+          <div class="stat-value">0</div>
+        </div>
+      </div>
+
+      <div class="profile-actions">
+        <button class="btn">Message</button>
+        <button class="btn btn-primary">Add Friend</button>
+      </div>
+    </div>
+
+    <!-- About section -->
+    <div style="background:white;border-radius:8px;padding:16px;box-shadow:0 1px 3px rgba(0,0,0,0.08);">
+      <h3 style="font-size:16px;margin-bottom:8px;">About</h3>
+      <p style="color:#555;font-size:14px;">
+        madxka.com Creations
+      </p>
+    </div>
+
+    <!-- More options -->
+    <div style="margin-top:12px;background:white;border-radius:8px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,0.08);">
+      <a href="#" style="display:block;padding:14px 16px;border-bottom:1px solid #eee;color:#191919;text-decoration:none;">
+        Currently Wearing
+      </a>
+      <a href="#" style="display:block;padding:14px 16px;border-bottom:1px solid #eee;color:#191919;text-decoration:none;">
+        Creations
+      </a>
+      <a href="#" style="display:block;padding:14px 16px;color:#191919;text-decoration:none;">
+        Groups
+      </a>
+    </div>
+  </div>
+
+  <!-- Bottom bar -->
+  <div class="bottom-bar">
+    <a href="#">◀</a>
+    <a href="#">▶</a>
+    <div class="center-btn">madxka.com</div>
+    <a href="#">⟳</a>
+    <a href="#">⋯</a>
+  </div>
+
+  <script>
+    function toggleSidebar() {
+      document.getElementById('sidebar').classList.toggle('open');
+      document.getElementById('overlay').classList.toggle('show');
+    }
+  </script>
+</body>
+</html>
