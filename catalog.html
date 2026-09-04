@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Catalog - Roblox Revival</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <div class="header">
+    <div class="header-left">
+      <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+      <div class="logo">C</div>
+      <div class="nav-links">
+        <a href="index.html">Games</a>
+        <a href="catalog.html">Catalog</a>
+        <a href="#">Create</a>
+        <a href="#">Download</a>
+      </div>
+    </div>
+    <div class="header-right">
+      <div class="currency">R$ 100</div>
+      <div class="currency">◆ 0</div>
+      <div class="notif">⚙ <span class="notif-badge">1</span></div>
+    </div>
+  </div>
+
+  <!-- Search -->
+  <div class="search-bar">
+    <div class="search-wrapper">
+      <span class="search-icon">🔍</span>
+      <input type="text" class="search-input" placeholder="Search">
+    </div>
+  </div>
+
+  <!-- Sidebar -->
+  <div class="overlay" id="overlay" onclick="toggleSidebar()"></div>
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <div class="sidebar-avatar">A</div>
+      <div><strong>Ajb</strong></div>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="index.html"><span class="icon">🏠</span> Home</a>
+      <a href="profile.html"><span class="icon">👤</span> Profile</a>
+      <a href="#"><span class="icon">💬</span> Messages</a>
+      <a href="#"><span class="icon">👥</span> Friends</a>
+      <a href="#"><span class="icon">🧍</span> Avatar</a>
+      <a href="#"><span class="icon">🎒</span> Inventory</a>
+      <a href="#"><span class="icon">🔄</span> Trade</a>
+      <a href="#"><span class="icon">👨‍👩‍👧‍👦</span> Groups</a>
+      <a href="#"><span class="icon">📋</span> Forums</a>
+      <a href="#"><span class="icon">🛒</span> Redeem</a>
+    </nav>
+  </div>
+
+  <!-- Main -->
+  <div class="main">
+    <h1 class="section-title">Catalog</h1>
+
+    <div class="catalog-header">
+      <select class="category-select">
+        <option>All Categories</option>
+        <option>Featured</option>
+        <option>Collectibles</option>
+        <option>Clothing</option>
+        <option>Body Parts</option>
+        <option>Gear</option>
+      </select>
+      <button class="search-btn">Search</button>
+    </div>
+
+    <!-- Browse by Category -->
+    <div class="category-list">
+      <div class="title">Browse by Category</div>
+      <a href="#" class="category-item">Featured <span class="arrow">▸</span></a>
+      <a href="#" class="category-item">Collectibles <span class="arrow">▸</span></a>
+      <a href="#" class="category-item">All Categories <span class="arrow">▸</span></a>
+      <a href="#" class="category-item">Clothing <span class="arrow">▸</span></a>
+      <a href="#" class="category-item">Body Parts <span class="arrow">▸</span></a>
+      <a href="#" class="category-item">Gear <span class="arrow">▸</span></a>
+    </div>
+
+    <!-- Items Grid (like the screenshot) -->
+    <div class="items-grid">
+      <a href="item.html" style="text-decoration:none;color:inherit;">
+        <div class="item-card">
+          <div class="item-thumb" style="background:#fff8e7;font-size:48px;">🍔</div>
+          <div class="item-info">
+            <div class="item-name">Cheezburger</div>
+            <div class="item-price">R$ 22</div>
+          </div>
+        </div>
+      </a>
+
+      <div class="item-card">
+        <div class="item-thumb" style="background:#f5e6d3;font-size:42px;">💇</div>
+        <div class="item-info">
+          <div class="item-name">Normal Boy Hair</div>
+          <div class="item-price">R$ 22</div>
+        </div>
+      </div>
+
+      <div class="item-card">
+        <div class="item-thumb" style="background:#e8e8e8;">
+          <div style="width:50px;height:70px;background:#ddd;border-radius:8px;position:relative;">
+            <div style="width:28px;height:28px;background:#f5d0a9;border-radius:50%;position:absolute;top:-14px;left:11px;"></div>
+          </div>
+        </div>
+        <div class="item-info">
+          <div class="item-name">ROBLOX Boy</div>
+          <div class="item-price">R$ 0</div>
+        </div>
+      </div>
+
+      <div class="item-card">
+        <div class="item-thumb" style="background:#e0e0e0;font-size:40px;">😝</div>
+        <div class="item-info">
+          <div class="item-name">Yuck!</div>
+          <div class="item-price">R$ 15</div>
+        </div>
+      </div>
+
+      <a href="item.html" style="text-decoration:none;color:inherit;">
+        <div class="item-card">
+          <div class="item-thumb" style="background:#1a3a1a;font-size:42px;">👹</div>
+          <div class="item-info">
+            <div class="item-name">Awful Horns Of The Mudland</div>
+            <div class="item-price">R$ 75</div>
+          </div>
+        </div>
+      </a>
+
+      <div class="item-card">
+        <div class="item-thumb" style="background:#2c3e50;font-size:40px;">🎩</div>
+        <div class="item-info">
+          <div class="item-name">Classic Top Hat</div>
+          <div class="item-price">R$ 50</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Filters section -->
+    <div class="filters" style="margin-top:24px;">
+      <h3>Filters</h3>
+      <div class="filter-group">
+        <strong style="font-size:13px;color:#666;">Genre</strong>
+        <div class="filter-option">
+          <input type="checkbox" id="all"> <label for="all">All Genres</label>
+        </div>
+        <div class="filter-option">
+          <input type="checkbox" id="building"> <label for="building">Building</label>
+        </div>
+        <div class="filter-option">
+          <input type="checkbox" id="horror"> <label for="horror">Horror</label>
+        </div>
+        <div class="filter-option">
+          <input type="checkbox" id="adventure"> <label for="adventure">Adventure</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom bar -->
+  <div class="bottom-bar">
+    <a href="#">◀</a>
+    <a href="#">▶</a>
+    <div class="center-btn">madxka.com</div>
+    <a href="#">⟳</a>
+    <a href="#">⋯</a>
+  </div>
+
+  <script>
+    function toggleSidebar() {
+      document.getElementById('sidebar').classList.toggle('open');
+      document.getElementById('overlay').classList.toggle('show');
+    }
+  </script>
+</body>
+</html>
